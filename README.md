@@ -6,6 +6,20 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 
 In this project you will build such a pipeline.
 
+## Project Submission
+
+**W&B project:** https://wandb.ai/wgucourse99/nyc_airbnb
+**GitHub repository:** https://github.com/tycerch/Project-Build-an-ML-Pipeline-Starter
+
+### Test set performance
+
+| Dataset | MAE | R2 |
+|---|---|---|
+| Validation | 34.13 | 0.552 |
+| Test | 33.85 | 0.564 |
+
+Performance on the test set matches performance on the validation set, so the model did not overfit.
+
 ## Table of contents
 
 - [Preliminary steps](#preliminary-steps)

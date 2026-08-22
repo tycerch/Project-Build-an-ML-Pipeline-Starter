@@ -49,51 +49,49 @@ def go(args):
     run.log_artifact(artifact)
 
 
-# TODO: In the code below, fill in the data type for each argument. The data type should be str, float or int. 
-# TODO: In the code below, fill in a description for each argument. The description should be a string.
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="A very basic data cleaning")
-  
+
     parser.add_argument(
-        "--input_artifact", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        "--input_artifact",
+        type = str,
+        help = "Name of the input artifact (the raw dataset) to fetch from W&B",
         required = True
     )
 
     parser.add_argument(
-        "--output_artifact", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        "--output_artifact",
+        type = str,
+        help = "Name for the output artifact (the cleaned dataset) to log to W&B",
         required = True
     )
 
     parser.add_argument(
-        "--output_type", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        "--output_type",
+        type = str,
+        help = "Type to assign to the output artifact",
         required = True
     )
 
     parser.add_argument(
-        "--output_description", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        "--output_description",
+        type = str,
+        help = "Description to attach to the output artifact",
         required = True
     )
 
     parser.add_argument(
-        "--min_price", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        "--min_price",
+        type = float,
+        help = "Minimum price to consider; rows below this are dropped as outliers",
         required = True
     )
 
     parser.add_argument(
         "--max_price",
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        type = float,
+        help = "Maximum price to consider; rows above this are dropped as outliers",
         required = True
     )
 
